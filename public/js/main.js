@@ -131,7 +131,7 @@ if (inquiryForm) {
 
     // ── Step 3: Send form data to our Node.js server ──
     try {
-      const response = await fetch('/submit-inquiry', {
+      const response = await fetch('https://tampark-site-production.up.railway.app/submit-inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
